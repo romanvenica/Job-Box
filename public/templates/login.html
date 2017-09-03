@@ -1,0 +1,31 @@
+<div  ng-controller="loginCtrl" class="login" style="    -webkit-animation-delay: 3s;  animation-delay: 3s;">
+  <div class="pages ">
+    <div class="page-content animated bounceIn">
+      <div class="logo"></div>
+      <form>
+        <h3>¿Ofrecés o Contratas?</h3>
+        <select ng-model="loginFaecbook">
+          <option value="Ofresco">Ofresco</option>
+          <option value="Contrato">Contrato</option>
+        </select>
+
+        <h3><label for="nameUser">Nombre de Usario</label></h3>
+        <input type="text"  class="nameUser" id="nameUser"  name="nameUser" placeholder="Nombre">
+
+        <h3><label for="nameUser">Contraseña</label></h3>
+        <input type="password"  class="nameUser" id="nameUser"  name="nameUser" placeholder="Contraseña">
+
+        <div class="container-btn">
+          <div ng-click="gotoPage('home')" class="button button-fill color-white">ENTRAR</div>
+
+          <div ng-if="'Contrato' == loginFaecbook" class="animated bounceIn">
+            o
+            <div class="button button-fill color-white"> Entrar con Facebook </div>
+          </div>
+        </div>
+      </form>
+      <p>Registrarme</p>
+    </div>
+  </div>
+</div>
+  
