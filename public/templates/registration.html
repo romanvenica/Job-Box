@@ -1,0 +1,28 @@
+<div ng-controller="registrationCtrl" class="page registration" >
+<div  class="page-content" >
+  <div class="animated fadeInUp">
+       <h1>Registro</h1>
+       
+       <form>
+         <input type="text" placeholder="Nombre" name="name" class="name" id="name">
+         <input type="text" placeholder="Apellido" name="lastName" class="lastName" id="lastName">
+         <input type="tel" placeholder="Telefono fijo" name="tel" class="tel" id="tel">
+         <input type="tel" placeholder="Celular" name="cel" class=" cel" id="cel">
+         <input type="email" placeholder="Email" name="email" class="email " id="email">
+         <input type="password" placeholder="Contraseña" name="password" class="password " id="password">
+         <select ng-model="userRegistration.provinces"  >
+           <option   ng-repeat="provinces in provinces" ng-value="provinces">{{provinces[1]}}</option>
+         </select>
+
+         <select>
+           <span ng-repeat="provinces in provinces"></span>
+           <option ng-repeat="localidad in localidad" ng-if="localidad[1] == userRegistration.provinces[0]  " value="{{localidad[2]}}">{{localidad[2]}}</option>
+         </select>
+         <div>
+            <input type="checkbox"  class="checkbox" id="check"><label class="conditions" for="check">Acepto Terminos y Condiciones</label>
+         </div>
+       </form>
+      <p ng-click="gotoPage('login')">VOLVER</p>
+  </div>
+</div>
+</div>

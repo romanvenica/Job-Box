@@ -1,6 +1,6 @@
-<div  ng-controller="loginCtrl" class="login" style="    -webkit-animation-delay: 3s;  animation-delay: 3s;">
-  <div class="pages ">
-    <div class="page-content animated bounceIn">
+<div  ng-controller="loginCtrl" class="page login" style="    -webkit-animation-delay: 3s;  animation-delay: 3s;">
+  <div class="page-content">
+    <div class=" animated bounceIn">
       <div class="logo"></div>
       <form>
         <h3>¿Ofrecés o Contratas?</h3>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </form>
-      <p>Registrarme</p>
+      <p ng-click="gotoPage('registration')">Registrarme</p>
     </div>
   </div>
 </div>

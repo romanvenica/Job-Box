@@ -1,4 +1,5 @@
-.login{
+.registration{
+    text-align: center;
     background: rgba(157,225,223,1) !important;
     background: -moz-linear-gradient(top, rgba(157,225,223,1) 0%, rgba(95,227,220,1) 19%, rgba(78,183,184,1) 43%, rgba(38,78,100,1) 100%)  !important;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(157,225,223,1)), color-stop(19%, rgba(95,227,220,1)), color-stop(43%, rgba(78,183,184,1)), color-stop(100%, rgba(38,78,100,1)))  !important;
@@ -7,43 +8,21 @@
     background: -ms-linear-gradient(top, rgba(157,225,223,1) 0%, rgba(95,227,220,1) 19%, rgba(78,183,184,1) 43%, rgba(38,78,100,1) 100%)  !important;
     background: linear-gradient(to bottom, rgba(157,225,223,1) 0%, rgba(95,227,220,1) 19%, rgba(78,183,184,1) 43%, rgba(38,78,100,1) 100%)  !important;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9de1df', endColorstr='#264e64', GradientType=0 );
-    text-align: center;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
     color:white;
-    h3{
-        margin: 8px;
+    input{
+        margin-top: 15px;
     }
-    .content-image(@url){
-        background-image: url(@url);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
+    select{
+        margin-top: 15px;
+    }
+    .checkbox{
+        width: 15px;
+        height: 15px;
+        margin: 20px;
 
     }
-    .logo{
-       .content-image('../image/logo.jpg');
-        height: 110px;
-        width: 110px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%
-    }
-
-    .container-btn{
-        margin-top: 34px;
-        .button{
-            color: teal !important;
-            max-width: 316px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 8px;
-            border: 1px solid teal;
-            height: 44px;
-            padding-top: 4px;
-        }
+    .conditions{
+        position: relative;
+        top:-2px;
     }
 }
